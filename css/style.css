@@ -18,10 +18,86 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
+}
+/* Add each section to this div with .container class to balance page margin */
+.container {
+  width: 90%;
+  margin: auto;
+}
+/*  */
+.section-header-title {
+  color: var(--primary);
+}
+
+/* Our Culinary section */
+.culinary-sec {
+  width: 100%;
+  height: auto;
+  padding: 5% 0%;
+}
+.culinary-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.section-header {
+  text-align: center;
+}
+.section-header-desc {
+  margin-top: 5px;
+}
+.culinary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.culinary-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.culinary-card-cover {
+  height: 300px;
+  /* background-color: #020202; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px 12px 0px 0px;
+}
+.culinary-card-content {
+  padding: 20px;
+}
+.culinary-card-content-title {
+  color: var(--text-main);
+  /* font-size: medium; */
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.cv1 {
+  background-image: url("https://foodish-api.com/images/dosa/dosa1.jpg");
+}
+.cv2 {
+  background-image: url("https://foodish-api.com/images/dosa/dosa70.jpg");
+}
+.cv3 {
+  background-image: url("https://foodish-api.com/images/dosa/dosa16.jpg");
+}
+
+.cv4 {
+  background-image: url("https://foodish-api.com/images/dosa/dosa27.jpg");
+}
+.cv5 {
+  background-image: url("https://foodish-api.com/images/dosa/dosa32.jpg");
+}
+.cv6 {
+  background-image: url("https://foodish-api.com/images/dosa/dosa10.jpg");
 }
