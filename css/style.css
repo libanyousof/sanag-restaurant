@@ -38,6 +38,7 @@ h3 {
   color: var(--primary);
 }
 
+/* ###################################### */
 /* Our Culinary section */
 .culinary-sec {
   width: 100%;
@@ -101,3 +102,17 @@ h3 {
 .cv6 {
   background-image: url("https://foodish-api.com/images/dosa/dosa10.jpg");
 }
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .culinary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Smartphones */
+@media only screen and (max-width: 767px) {
+  .culinary-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ############################################################## */
