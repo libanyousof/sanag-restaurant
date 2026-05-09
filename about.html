@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Sanag Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <!-- nav -->
+      <div class="container">
+        <div class="header-nav">
+          <div class="logo-area">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chef-hat-icon lucide-chef-hat"
+            >
+              <path
+                d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+              />
+              <path d="M6 17h12" />
+            </svg>
+            <h1 class="logo-text">Sanag Restaurant</h1>
+          </div>
+          <div class="menu-bars">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+              id="menu-bar"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </div>
+          <nav id="nav">
+            <ul class="nav-links">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="#menu">Menu</a></li>
+              <li><a class="nav-link" href="about.html">About</a></li>
+              <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="close" id="close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>About Sanag</h1>
+            <p>
+              Authentic Somali cuisine crafted with tradition, flavor, and
+              hospitality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About: Our Story -->
+      <section class="about-story">
+        <div class="container">
+          <div class="about-story-grid">
+            <div class="about-story-image">
+              <img
+                src="https://i.pinimg.com/1200x/0d/d9/6c/0dd96c7abf3e170ebc9688336c55ddf2.jpg"
+                alt="Our Story"
+              />
+            </div>
+
+            <div class="about-story-content">
+              <h1>Our Story</h1>
+              <p>
+                Sanag Restaurant opened in 2015 with one goal: to bring the true
+                flavors of Somali cooking to Minnesota. Our founder grew up in
+                the Sanag region of northern Somalia, learning recipes that had
+                been cooked in the family for three generations.
+              </p>
+              <p>
+                What started as a small family kitchen has grown into a place
+                the community calls home. Every dish we serve is made the same
+                way it always has been, with the same spices, the same slow
+                cooking, and the same generous spirit that Somali hospitality is
+                known for.
+              </p>
+              <div class="about-stats">
+                <div class="stat">
+                  <h3>10+</h3>
+                  <p>Years Serving</p>
+                </div>
+                <div class="stat">
+                  <h3>50+</h3>
+                  <p>Dishes on Menu</p>
+                </div>
+                <div class="stat">
+                  <h3>3</h3>
+                  <p>Generations of Recipes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meet the Team -->
+      <section class="team">
+        <div class="container">
+          <div class="team-box">
+            <h1>Meet Our Team</h1>
+            <p>The people behind this project</p>
+            <div class="team-grid">
+              <!-- Team card-1 -->
+              <div class="team-card">
+                <div class="team-cover liban-cover">
+                  <div class="team-profile liban-profile"></div>
+                </div>
+                <div class="team-info">
+                  <h4 class="name">Liban Mohamed Mohamud</h4>
+                  <p>Developer</p>
+                  <a href="https://github.com/libanyousof" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+              <!-- Team card-2 -->
+              <div class="team-card">
+                <div class="team-cover abdiweli-cover">
+                  <div class="team-profile abdiweli-profile"></div>
+                </div>
+                <div class="team-info">
+                  <h4 class="name">Abdiweli Mohamud Mohamed</h4>
+                  <p>Developer</p>
+                  <a href="https://github.com/Abdiwelijobless" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+              <!-- Team card-3 -->
+              <div class="team-card">
+                <div class="team-cover maryama-cover">
+                  <div class="team-profile maryama-profile"></div>
+                </div>
+                <div class="team-info">
+                  <h4 class="name">Maryama Hassan Said</h4>
+                  <p>Developer</p>
+                  <a
+                    href="https://github.com/maryamahassan6020-ship-it"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+              <!-- Team card-4 -->
+              <div class="team-card">
+                <div class="team-cover moha-cover">
+                  <div class="team-profile moha-profile"></div>
+                </div>
+                <div class="team-info">
+                  <h4 class="name">Mohamed Sayid-Ahmed</h4>
+                  <p>Developer</p>
+                  <a href="https://github.com/Moha-deek" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chef-hat-icon lucide-chef-hat"
+              >
+                <path
+                  d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                />
+                <path d="M6 17h12" />
+              </svg>
+              <h3>Sanag Restaurant</h3>
+            </div>
+            <p>Authentic Somali Cuisine in Minnesota</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Sanag Restaurant. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

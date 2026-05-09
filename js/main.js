@@ -23,7 +23,7 @@ navLink.forEach((link) => {
   });
 });
 
-// // // // // // // // // // // // // // // // // // // // // // // //
+// menu
 const menuData = {
   mainDishes: [
     {
