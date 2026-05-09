@@ -65,7 +65,7 @@ header {
   font-weight: 600;
   color: var(--primary);
 }
-.navbar {
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,6 +85,12 @@ header {
 }
 .nav-links a:hover {
   color: #e67e22;
+}
+
+.menu-bars,
+.close {
+  display: none;
+  font-size: 1.2rem;
 }
 .hero {
   width: 100%;
@@ -188,18 +194,6 @@ header {
 }
 .cv6 {
   background-image: url("https://foodish-api.com/images/dosa/dosa10.jpg");
-}
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .culinary-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* Smartphones */
-@media only screen and (max-width: 767px) {
-  .culinary-cards {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ############################################################## */
@@ -429,4 +423,161 @@ header {
   border-top: 1px solid #2d3748;
   padding-top: 20px;
   color: #9ca3af;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* header */
+  header {
+    height: 7vh;
+  }
+
+  /* hero */
+  .hero {
+    height: 40vh;
+  }
+  .culinary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* story */
+  .story-container {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+  .story-image img {
+    width: 100%;
+    height: auto;
+  }
+  .story-text {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* Smartphones */
+@media only screen and (max-width: 767px) {
+  /* header */
+  .container {
+    width: 95%;
+  }
+  body {
+    position: relative;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  nav {
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--dark);
+    top: 0%;
+    right: 0%;
+    box-shadow: horizontal vertical blur color;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 2rem 0rem;
+    position: absolute;
+    top: 8%;
+    width: 100%;
+  }
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2d3748;
+    padding: 1.5rem 2rem;
+    margin: 0%;
+  }
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+  .nav-links li a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0%;
+    padding: 0%;
+  }
+  .menu-bars {
+    display: block;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    color: #fff;
+  }
+  .close svg {
+    width: 32px;
+    height: 32px;
+  }
+  /* hero */
+  .hero {
+    height: 60vh;
+  }
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  /* Culinary */
+  .culinary-sec {
+    padding-top: 4rem;
+  }
+  .culinary-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* menu */
+  .menu-section {
+    padding: 4rem 0rem;
+  }
+  .menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* story */
+  .story {
+    padding-bottom: 4rem;
+  }
+  .story-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .story-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* visit us */
+  .visit {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  .visit-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* footer */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom p {
+    font-size: 0.9rem;
+  }
 }

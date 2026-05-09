@@ -1,3 +1,29 @@
+const menuBar = document.querySelector("#menu-bar");
+const closeNav = document.querySelector("#close");
+const nav = document.querySelector("#nav");
+const navLink = document.querySelectorAll(".nav-link");
+
+//displaying nav when menu-bar is clicked
+menuBar.addEventListener("click", () => {
+  menuBar.style.display = "none";
+  nav.style.display = "block";
+});
+
+//closing nav when cancel is clicked
+closeNav.addEventListener("click", () => {
+  menuBar.style.display = "block";
+  nav.style.display = "none";
+});
+
+//closing nav when each link is clicked
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuBar.style.display = "block";
+    nav.style.display = "none";
+  });
+});
+
+// // // // // // // // // // // // // // // // // // // // // // // //
 const menuData = {
   mainDishes: [
     {
@@ -79,33 +105,3 @@ function displayMenu(items, elementId) {
 displayMenu(menuData.mainDishes, "main-dishes");
 displayMenu(menuData.appetizers, "appetizers");
 displayMenu(menuData.drinks, "drinks");
-
-// Our Culinary
-async function loadCulinaryCards() {
-  const container = document.querySelector(".culinary-cards");
-  container.innerHTML = "";
-
-  const letters = "abcdefghijklmnopqrstuvwxyz";
-  const randomLetter = letters[Math.floor(Math.random() * letters.length)];
-
-  const { data } = await axios.get(
-    `https://www.themealdb.com/api/json/v1/1/search.php?s=${randomLetter}`,
-  );
-
-  const meals = (data.meals || []).slice(0, 6);
-
-  // If letter returned less than 6, retry with another letter
-  if (meals.length < 6) {
-    loadCulinaryCards();
-    return;
-  }
-
-  meals.forEach((meal) => {
-    const card = createCard({
-      title: meal.strMeal,
-      desc: meal.strCategory,
-      imageUrl: meal.strMealThumb,
-    });
-    container.appendChild(card);
-  });
-}

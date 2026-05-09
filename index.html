@@ -19,7 +19,7 @@
     <header>
       <!-- nav -->
       <div class="container">
-        <nav class="navbar">
+        <div class="header-nav">
           <div class="logo-area">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,13 +40,51 @@
             </svg>
             <h1 class="logo-text">Sanag Restaurant</h1>
           </div>
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+          <div class="menu-bars">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+              id="menu-bar"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </div>
+          <nav id="nav">
+            <ul class="nav-links">
+              <li><a class="nav-link" href="#">Home</a></li>
+              <li><a class="nav-link" href="#menu">Menu</a></li>
+              <li><a class="nav-link" href="#">About</a></li>
+              <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <div class="close" id="close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -331,6 +369,6 @@
         <p>&copy; 2026 Sanag Restaurant. All rights reserved.</p>
       </div>
     </footer>
+    <script src="/js/main.js"></script>
   </body>
-  <script src="/js/main.js"></script>
 </html>
