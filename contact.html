@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanag Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <!-- nav -->
+      <div class="container">
+        <div class="header-nav">
+          <div class="logo-area">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chef-hat-icon lucide-chef-hat"
+            >
+              <path
+                d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+              />
+              <path d="M6 17h12" />
+            </svg>
+            <h1 class="logo-text">Sanag Restaurant</h1>
+          </div>
+          <div class="menu-bars">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+              id="menu-bar"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </div>
+          <nav id="nav">
+            <ul class="nav-links">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="#menu">Menu</a></li>
+              <li><a class="nav-link" href="about.html">About</a></li>
+              <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="close" id="close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="contact-hero">
+        <div class="container">
+          <div class="contact-container">
+            <i class="fa-solid fa-angles-right"></i>
+            <h1>Contact Us</h1>
+          </div>
+        </div>
+      </section>
+      <section class="contact-sec">
+        <div class="container">
+          <div class="contact">
+            <div class="contact-info">
+              <h2>Visit Us</h2>
+              <p class="subtitle">We'd love to serve you</p>
+
+              <div class="visit-container">
+                <div class="visit-card">
+                  <h3>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-map-pin-icon lucide-map-pin"
+                    >
+                      <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span>Location</span>
+                  </h3>
+                  <p>123 Cedar Ave</p>
+                  <p>Minneapolis, MN 55454</p>
+                </div>
+
+                <div class="visit-card">
+                  <h3>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-clock-icon lucide-clock"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 6v6l4 2" />
+                    </svg>
+                    <span>Hours</span>
+                  </h3>
+                  <p>Monday - Sunday</p>
+                  <p>11:00 AM - 10:00 PM</p>
+                </div>
+
+                <div class="visit-card">
+                  <h3>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-phone-icon lucide-phone"
+                    >
+                      <path
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                      />
+                    </svg>
+                    <span>Contact</span>
+                  </h3>
+                  <p>(612) 555-0123</p>
+                  <p>info@sanagrestaurant.com</p>
+                </div>
+              </div>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input
+                type="hidden"
+                name="access_key"
+                value="edd6fc66-8d3d-40ba-ae24-ddea1739b7d0"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Contact Form Submission - Sanag Restaurant"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://yoursite.netlify.app/success.html"
+              />
+
+              <h2>Send a Message</h2>
+              <p class="subtitle">We'll get back to you as soon as possible</p>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="firstname">First name</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="Your firstname"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="lastname">Last name</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Your lastname"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a subject</option>
+                  <option value="reservation">Table reservation</option>
+                  <option value="inquiry">General inquiry</option>
+                  <option value="catering">Catering & events</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                  />
+                  <path d="m21.854 2.147-10.94 10.939" />
+                </svg>
+                Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chef-hat-icon lucide-chef-hat"
+              >
+                <path
+                  d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                />
+                <path d="M6 17h12" />
+              </svg>
+              <h3>Sanag Restaurant</h3>
+            </div>
+            <p>Authentic Somali Cuisine in Minnesota</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Sanag Restaurant. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

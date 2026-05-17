@@ -23,6 +23,73 @@ navLink.forEach((link) => {
   });
 });
 
+// Culinary
+
+/*
+              <div class="culinary-card">
+                <div class="culinary-card-cover cv1"></div>
+                <div class="culinary-card-content">
+                  <h3 class="culinary-card-content-title">
+                    Spiced Rice Platter
+                  </h3>
+                  <p class="culinary-card-content-descript">
+                    Aromatic rice served with tender meat and vegetables
+                  </p>
+                </div>
+              </div>
+*/
+
+const cardData = [
+  {
+    category: "biryani",
+    title: "Spiced Rice Platter",
+    desc: "Aromatic rice served with tender meat and vegetables",
+  },
+  {
+    category: "burger",
+    title: "Fresh Grilled Burger",
+    desc: "Juicy patties perfectly seasoned and grilled to perfection",
+  },
+  {
+    category: "butter-chicken",
+    title: "Spiced Lamb",
+    desc: "Tender lamb slow-cooked with traditional spices",
+  },
+  {
+    category: "dosa",
+    title: "Fresh Flatbreads",
+    desc: "Homemade canjeero and sabaayad breads",
+  },
+  {
+    category: "rice",
+    title: "Traditional Breakfast",
+    desc: "A hearty start to your day with Somali flavors",
+  },
+  {
+    category: "dessert",
+    title: "Sweets & Desserts",
+    desc: "Indulgent treats to end your meal on a high note",
+  },
+];
+
+const container = document.querySelector(".culinary-cards");
+
+cardData.forEach((item) => {
+  axios
+    .get(`https://foodish-api.com/api/images/${item.category}`)
+    .then((res) => {
+      container.innerHTML += `
+      <div class="culinary-card">
+        <div class="culinary-card-cover" style="background-image: url('${res.data.image}');"></div>
+        <div class="culinary-card-content">
+          <h3 class="culinary-card-content-title">${item.title}</h3>
+          <p class="culinary-card-content-descript">${item.desc}</p>
+        </div>
+      </div>
+    `;
+    });
+});
+
 // menu
 const menuData = {
   mainDishes: [
