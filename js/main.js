@@ -3,25 +3,24 @@ const closeNav = document.querySelector("#close");
 const nav = document.querySelector("#nav");
 const navLink = document.querySelectorAll(".nav-link");
 
-//displaying nav when menu-bar is clicked
-menuBar.addEventListener("click", () => {
-  menuBar.style.display = "none";
-  nav.style.display = "block";
-});
+if (menuBar) {
+  menuBar.addEventListener("click", () => {
+    menuBar.style.display = "none";
+    nav.style.display = "block";
+  });
 
-//closing nav when cancel is clicked
-closeNav.addEventListener("click", () => {
-  menuBar.style.display = "block";
-  nav.style.display = "none";
-});
-
-//closing nav when each link is clicked
-navLink.forEach((link) => {
-  link.addEventListener("click", () => {
+  closeNav.addEventListener("click", () => {
     menuBar.style.display = "block";
     nav.style.display = "none";
   });
-});
+
+  navLink.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuBar.style.display = "block";
+      nav.style.display = "none";
+    });
+  });
+}
 
 // Culinary
 
